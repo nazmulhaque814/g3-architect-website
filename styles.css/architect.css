@@ -75,6 +75,40 @@ main > section{
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
 }
+#feature-section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.gard{
+    padding: 30px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
+    bottom: 20px;
+    border-radius: 8px;
+}
+.gard .title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#ep-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+#ep-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.featured-architect img{
+    width: 100%;
+}
+.features{
+    gap: 140px;
+    display: flex;
+}
 /* some fact related styles */
 .fact-card{
     border: 1px solid  #FF900E;
@@ -136,7 +170,8 @@ main > section{
     }
     .team-image-container , 
     .facts-container ,
-    .sponsor-companies
+    .sponsor-companies ,
+    .features
     {
         grid-template-columns:  1fr;
     }
@@ -149,10 +184,14 @@ main > section{
     .our-features{
         margin-left: 20px;
     }
+    #ep-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
 }
 /* medium size device */
 @media screen and (max-width: 576px) and (max-width: 992px) {
-    .teams{
+    .teams , .features{
         flex-direction: column;
     }
     .our-features{
@@ -164,5 +203,9 @@ main > section{
         grid-template-columns: repeat(2, 1fr);
         gap: 50px;
         justify-items: center;
+    }
+    #ep-badge{
+        margin-top: 20px;
+        margin-left: 20px;
     }
 }
